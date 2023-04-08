@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="observablehq-viewof-minYear-26d8483e"></div>
+<div id="observablehq-plot-26d8483e"></div>
+<p>Credit: <a href="https://observablehq.com/d/175c0c86fa1440a6@50">DataFest Vis by Andy Reagan</a></p>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/175c0c86fa1440a6.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "viewof minYear") return new Inspector(document.querySelector("#observablehq-viewof-minYear-26d8483e"));
+  if (name === "plot") return new Inspector(document.querySelector("#observablehq-plot-26d8483e"));
+});
+</script>
+</body>
+</html>
